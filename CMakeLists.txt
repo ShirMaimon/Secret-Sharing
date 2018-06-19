@@ -13,7 +13,7 @@ set(SOURCE_FILES main.cpp ProtocolParty.cpp ProtocolParty.h TemplateField.h Temp
 
 link_directories(/usr/local/opt $ENV{HOME}/Documents/libscapi/install/lib)
 
-add_executable(secret_sharing main.cpp ProtocolParty.h)
+add_executable(secret_sharing main.cpp ProtocolParty.h TemplateField.h TemplateField.cpp GF2_8LookupTable.cpp GF2_8LookupTable.h)
 
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++14 -maes -mpclmul -mbmi2")

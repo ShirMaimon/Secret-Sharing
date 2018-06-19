@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.10.2/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -81,18 +81,70 @@ CMakeFiles/secret_sharing.dir/main.cpp.o.provides: CMakeFiles/secret_sharing.dir
 CMakeFiles/secret_sharing.dir/main.cpp.o.provides.build: CMakeFiles/secret_sharing.dir/main.cpp.o
 
 
+CMakeFiles/secret_sharing.dir/TemplateField.cpp.o: CMakeFiles/secret_sharing.dir/flags.make
+CMakeFiles/secret_sharing.dir/TemplateField.cpp.o: TemplateField.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rahul/Documents/secret_sharing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/secret_sharing.dir/TemplateField.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/secret_sharing.dir/TemplateField.cpp.o -c /Users/rahul/Documents/secret_sharing/TemplateField.cpp
+
+CMakeFiles/secret_sharing.dir/TemplateField.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/secret_sharing.dir/TemplateField.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rahul/Documents/secret_sharing/TemplateField.cpp > CMakeFiles/secret_sharing.dir/TemplateField.cpp.i
+
+CMakeFiles/secret_sharing.dir/TemplateField.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/secret_sharing.dir/TemplateField.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rahul/Documents/secret_sharing/TemplateField.cpp -o CMakeFiles/secret_sharing.dir/TemplateField.cpp.s
+
+CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.requires:
+
+.PHONY : CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.requires
+
+CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.provides: CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.requires
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.provides.build
+.PHONY : CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.provides
+
+CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.provides.build: CMakeFiles/secret_sharing.dir/TemplateField.cpp.o
+
+
+CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o: CMakeFiles/secret_sharing.dir/flags.make
+CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o: GF2_8LookupTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rahul/Documents/secret_sharing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o -c /Users/rahul/Documents/secret_sharing/GF2_8LookupTable.cpp
+
+CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rahul/Documents/secret_sharing/GF2_8LookupTable.cpp > CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.i
+
+CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rahul/Documents/secret_sharing/GF2_8LookupTable.cpp -o CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.s
+
+CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.requires:
+
+.PHONY : CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.requires
+
+CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.provides: CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.provides.build
+.PHONY : CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.provides
+
+CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.provides.build: CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o
+
+
 # Object files for target secret_sharing
 secret_sharing_OBJECTS = \
-"CMakeFiles/secret_sharing.dir/main.cpp.o"
+"CMakeFiles/secret_sharing.dir/main.cpp.o" \
+"CMakeFiles/secret_sharing.dir/TemplateField.cpp.o" \
+"CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o"
 
 # External object files for target secret_sharing
 secret_sharing_EXTERNAL_OBJECTS =
 
 secret_sharing: CMakeFiles/secret_sharing.dir/main.cpp.o
+secret_sharing: CMakeFiles/secret_sharing.dir/TemplateField.cpp.o
+secret_sharing: CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o
 secret_sharing: CMakeFiles/secret_sharing.dir/build.make
 secret_sharing: /Users/rahul/Documents/libscapi/libscapi.a
 secret_sharing: CMakeFiles/secret_sharing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rahul/Documents/secret_sharing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable secret_sharing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rahul/Documents/secret_sharing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable secret_sharing"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/secret_sharing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -101,6 +153,8 @@ CMakeFiles/secret_sharing.dir/build: secret_sharing
 .PHONY : CMakeFiles/secret_sharing.dir/build
 
 CMakeFiles/secret_sharing.dir/requires: CMakeFiles/secret_sharing.dir/main.cpp.o.requires
+CMakeFiles/secret_sharing.dir/requires: CMakeFiles/secret_sharing.dir/TemplateField.cpp.o.requires
+CMakeFiles/secret_sharing.dir/requires: CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o.requires
 
 .PHONY : CMakeFiles/secret_sharing.dir/requires
 

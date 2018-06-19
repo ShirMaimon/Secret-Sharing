@@ -13,6 +13,6 @@
 #include <NTL/GF2X.h>
 #include <NTL/ZZ_p.h>
 #include<NTL/GF2XFactoring.h>
-//#include <libscapi/include/primitives/Mersenne.hpp>
+#include <libscapi/include/primitives/Mersenne.hpp>
 
 #endif //SECRET_SHARING_TEMPLATEFIELD_H

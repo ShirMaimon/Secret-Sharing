@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/Cellar/cmake/3.10.2/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/Cellar/cmake/3.10.2/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/rahul/Documents/secret_sharing
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.10.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.10.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,6 +123,60 @@ secret_sharing/fast:
 	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/build
 .PHONY : secret_sharing/fast
 
+GF2_8LookupTable.o: GF2_8LookupTable.cpp.o
+
+.PHONY : GF2_8LookupTable.o
+
+# target to build an object file
+GF2_8LookupTable.cpp.o:
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o
+.PHONY : GF2_8LookupTable.cpp.o
+
+GF2_8LookupTable.i: GF2_8LookupTable.cpp.i
+
+.PHONY : GF2_8LookupTable.i
+
+# target to preprocess a source file
+GF2_8LookupTable.cpp.i:
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.i
+.PHONY : GF2_8LookupTable.cpp.i
+
+GF2_8LookupTable.s: GF2_8LookupTable.cpp.s
+
+.PHONY : GF2_8LookupTable.s
+
+# target to generate assembly for a file
+GF2_8LookupTable.cpp.s:
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.s
+.PHONY : GF2_8LookupTable.cpp.s
+
+TemplateField.o: TemplateField.cpp.o
+
+.PHONY : TemplateField.o
+
+# target to build an object file
+TemplateField.cpp.o:
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/TemplateField.cpp.o
+.PHONY : TemplateField.cpp.o
+
+TemplateField.i: TemplateField.cpp.i
+
+.PHONY : TemplateField.i
+
+# target to preprocess a source file
+TemplateField.cpp.i:
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/TemplateField.cpp.i
+.PHONY : TemplateField.cpp.i
+
+TemplateField.s: TemplateField.cpp.s
+
+.PHONY : TemplateField.s
+
+# target to generate assembly for a file
+TemplateField.cpp.s:
+	$(MAKE) -f CMakeFiles/secret_sharing.dir/build.make CMakeFiles/secret_sharing.dir/TemplateField.cpp.s
+.PHONY : TemplateField.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... secret_sharing"
+	@echo "... GF2_8LookupTable.o"
+	@echo "... GF2_8LookupTable.i"
+	@echo "... GF2_8LookupTable.s"
+	@echo "... TemplateField.o"
+	@echo "... TemplateField.i"
+	@echo "... TemplateField.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/secret_sharing.dir/main.cpp.o"
+  "CMakeFiles/secret_sharing.dir/TemplateField.cpp.o"
+  "CMakeFiles/secret_sharing.dir/GF2_8LookupTable.cpp.o"
   "secret_sharing.pdb"
   "secret_sharing"
 )
